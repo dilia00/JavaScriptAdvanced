@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script src="form.js" type="module"></script>
+    <style>
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        margin-bottom: 20px;
+      }
+      .product_name {
+        width: 300px;
+      }
+      .error-color::placeholder {
+        color: red;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form">
+      <h1 class="title">Напишите свой отзыв</h1>
+      <input class="product_name" type="text" 
+        placeholder="Наименование продукта" required/>
+      <textarea class="product_review" placeholder="Отзыв" cols="39"
+        rows="5" minlength="5" maxlength="500" required></textarea>
+      <button class="btn">Добавить отзыв</button>
+    </form>
+    <a href="reviews.html">Посмотреть отзывы</a>
+  </body>
+</html>
