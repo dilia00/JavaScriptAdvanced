@@ -29,8 +29,8 @@ contentEl.addEventListener('click', ({ target }) => {
 
         if (foundedIndex !== -1) {
             reviews.splice(foundedIndex, 1);
+            saveСhange(productKey, reviews);
         }
-        saveСhange(productKey, reviews);
 
         if (getReviews(productKey).length <= 0) {
             removeProduct(productKey);
